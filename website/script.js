@@ -89,8 +89,7 @@ const translations = {
     "contact.territory.label": "Território",
     "contact.territory.value": "Serra do Caldeirão e Serra de Monchique",
     "contact.keywords.label": "Palavras-chave",
-    "contact.keywords.value": "Sobreiro, alterações climáticas, adaptação, sensores, sustentabilidade",
-    "footer.copy": "Conteúdos preparados a partir dos documentos da candidatura OAKHIMEDES - versão V3."
+    "contact.keywords.value": "Sobreiro, alterações climáticas, adaptação, sensores, sustentabilidade"
   },
   en: {
     "meta.title": "OAKHIMEDES - Cork oak adaptation to climate change",
@@ -182,8 +181,7 @@ const translations = {
     "contact.territory.label": "Territory",
     "contact.territory.value": "Serra do Caldeirão and Serra de Monchique",
     "contact.keywords.label": "Keywords",
-    "contact.keywords.value": "Cork oak, climate change, adaptation, sensors, sustainability",
-    "footer.copy": "Content prepared from the OAKHIMEDES application documents - version V3."
+    "contact.keywords.value": "Cork oak, climate change, adaptation, sensors, sustainability"
   }
 };
 
