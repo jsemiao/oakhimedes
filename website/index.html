@@ -18,74 +18,81 @@
         <img src="assets/logo-oakhimedes.svg" width="232" height="56" alt="OAKHIMEDES">
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-        <a href="#projeto">Projeto</a>
-        <a href="#metodo">Método</a>
-        <a href="#equipa">Equipa</a>
-        <a href="#atividades">Atividades</a>
-        <a href="#marcos">Marcos</a>
-        <a href="#contactos">Contactos</a>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal" data-i18n-attr="aria-label:nav.aria">
+        <a href="#projeto" data-i18n="nav.project">Projeto</a>
+        <a href="#metodo" data-i18n="nav.method">Método</a>
+        <a href="#equipa" data-i18n="nav.team">Equipa</a>
+        <a href="#atividades" data-i18n="nav.activities">Atividades</a>
+        <a href="#marcos" data-i18n="nav.milestones">Marcos</a>
+        <a href="#contactos" data-i18n="nav.contacts">Contactos</a>
       </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Selecionar idioma" data-i18n-attr="aria-label:language.aria">
+          <button class="language-option is-active" type="button" data-lang-switch="pt" aria-pressed="true">PT</button>
+          <button class="language-option" type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu" data-i18n-attr="aria-label:nav.open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <img class="hero__image" src="assets/hero-oakhimedes.png" alt="Sobreiros adultos monitorizados com sensor de tronco e drone em paisagem mediterrânica.">
+        <img class="hero__image" src="assets/hero-oakhimedes.png" alt="Sobreiros adultos monitorizados com sensor de tronco e drone em paisagem mediterrânica." data-i18n-attr="alt:hero.imageAlt">
         <div class="hero__shade" aria-hidden="true"></div>
 
         <div class="hero__content">
-          <p class="eyebrow">Universidade do Algarve · 2026-2029</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Universidade do Algarve · 2026-2029</p>
           <h1 id="hero-title">OAKHIMEDES</h1>
-          <p class="hero__lead">
+          <p class="hero__lead" data-i18n="hero.lead">
             Adaptações dos sobreiros face às alterações climáticas e como as mesmas promovem a sustentabilidade do ecossistema.
           </p>
-          <p class="hero__summary">
+          <p class="hero__summary" data-i18n="hero.summary">
             Um projeto multidisciplinar que combina monitorização remota, sensores ambientais, genómica, proteómica e inteligência artificial para identificar árvores resilientes no Algarve.
           </p>
 
-          <div class="hero__actions" aria-label="Ações principais">
-            <a class="button button--primary" href="#metodo">Ver método científico</a>
-            <a class="button button--ghost" href="#atividades">Explorar atividades</a>
+          <div class="hero__actions" aria-label="Ações principais" data-i18n-attr="aria-label:hero.actions">
+            <a class="button button--primary" href="#metodo" data-i18n="hero.primary">Ver método científico</a>
+            <a class="button button--ghost" href="#atividades" data-i18n="hero.secondary">Explorar atividades</a>
           </div>
         </div>
       </section>
 
-      <section class="metrics" aria-label="Indicadores do projeto">
+      <section class="metrics" aria-label="Indicadores do projeto" data-i18n-attr="aria-label:metrics.aria">
         <div class="metric">
           <strong>50</strong>
-          <span>sobreiros adultos monitorizados</span>
+          <span data-i18n="metrics.trees">sobreiros adultos monitorizados</span>
         </div>
         <div class="metric">
           <strong>2</strong>
-          <span>campos experimentais no Algarve</span>
+          <span data-i18n="metrics.fields">campos experimentais no Algarve</span>
         </div>
         <div class="metric">
           <strong>6</strong>
-          <span>atividades científicas integradas</span>
+          <span data-i18n="metrics.activities">atividades científicas integradas</span>
         </div>
         <div class="metric">
           <strong>3</strong>
-          <span>ODS: ação climática, vida terrestre e inovação</span>
+          <span data-i18n="metrics.ods">ODS: ação climática, vida terrestre e inovação</span>
         </div>
       </section>
 
       <section class="section section--intro" id="projeto">
         <div class="section__inner intro-grid">
           <div>
-            <p class="section-kicker">O desafio</p>
-            <h2>Preservar o montado num clima em mudança.</h2>
+            <p class="section-kicker" data-i18n="intro.kicker">O desafio</p>
+            <h2 data-i18n="intro.title">Preservar o montado num clima em mudança.</h2>
           </div>
           <div class="intro-copy">
-            <p>
+            <p data-i18n="intro.copy1">
               As florestas de sobreiro são ecossistemas essenciais para a biodiversidade, a proteção contra a desertificação e a economia da cortiça. No sul de Portugal, a redução da precipitação, o aumento das temperaturas, a degradação do solo e agentes patogénicos como <em>Phytophthora cinnamomi</em> estão a acelerar o declínio das árvores.
             </p>
-            <p>
+            <p data-i18n="intro.copy2">
               O OAKHIMEDES cria uma leitura multidimensional do estado fisiológico dos sobreiros, relacionando copa, tronco, solo, clima, perfis moleculares e modelos de previsão para apoiar decisões de gestão florestal e reflorestação.
             </p>
           </div>
@@ -95,21 +102,21 @@
       <section class="section section--map" id="metodo">
         <div class="section__inner method-layout">
           <div class="method-copy">
-            <p class="section-kicker">Plano científico</p>
-            <h2>Da árvore ao modelo preditivo.</h2>
-            <p>
+            <p class="section-kicker" data-i18n="method.kicker">Plano científico</p>
+            <h2 data-i18n="method.title">Da árvore ao modelo preditivo.</h2>
+            <p data-i18n="method.copy">
               O projeto acompanha 25 sobreiros na Serra do Caldeirão e 25 na Serra de Monchique, comparando condições xéricas e mesófilas ao longo de dois anos de monitorização.
             </p>
             <ul class="check-list">
-              <li>Drones com sensores óticos, multiespectrais VIS-NIR, SWIR e térmicos.</li>
-              <li>Dendrómetros automáticos, estações meteorológicas e sondas tensiométricas.</li>
-              <li>Análises foliares de nutrientes, FT-IR, SWATH-MS e sequenciação genómica completa.</li>
-              <li>Modelos de aprendizagem automática para padrões de vitalidade, declínio e adaptação.</li>
+              <li data-i18n="method.item1">Drones com sensores óticos, multiespectrais VIS-NIR, SWIR e térmicos.</li>
+              <li data-i18n="method.item2">Dendrómetros automáticos, estações meteorológicas e sondas tensiométricas.</li>
+              <li data-i18n="method.item3">Análises foliares de nutrientes, FT-IR, SWATH-MS e sequenciação genómica completa.</li>
+              <li data-i18n="method.item4">Modelos de aprendizagem automática para padrões de vitalidade, declínio e adaptação.</li>
             </ul>
           </div>
 
           <figure class="system-figure">
-            <img src="assets/research-system.svg" width="820" height="560" alt="Esquema visual da recolha integrada de dados no projeto OAKHIMEDES.">
+            <img src="assets/research-system.svg" width="820" height="560" alt="Esquema visual da recolha integrada de dados no projeto OAKHIMEDES." data-i18n-attr="alt:method.figureAlt">
           </figure>
         </div>
       </section>
@@ -117,15 +124,15 @@
       <section class="section section--team" id="equipa">
         <div class="section__inner">
           <div class="section-heading">
-            <p class="section-kicker">Equipa de investigação</p>
-            <h2>Investigadores da Universidade do Algarve.</h2>
+            <p class="section-kicker" data-i18n="team.kicker">Equipa de investigação</p>
+            <h2 data-i18n="team.title">Investigadores da Universidade do Algarve.</h2>
           </div>
 
-          <div class="team-grid" aria-label="Lista de investigadores">
+          <div class="team-grid" aria-label="Lista de investigadores" data-i18n-attr="aria-label:team.aria">
             <article class="team-member team-member--lead">
               <span>IR</span>
               <h3>Ana Cristina Coelho</h3>
-              <p>Investigadora Responsável</p>
+              <p data-i18n="team.leadRole">Investigadora Responsável</p>
             </article>
             <article class="team-member">
               <span>01</span>
@@ -194,40 +201,40 @@
       <section class="section" id="atividades">
         <div class="section__inner">
           <div class="section-heading">
-            <p class="section-kicker">Atividades</p>
-            <h2>Seis frentes de trabalho, uma leitura integrada.</h2>
+            <p class="section-kicker" data-i18n="activities.kicker">Atividades</p>
+            <h2 data-i18n="activities.title">Seis frentes de trabalho, uma leitura integrada.</h2>
           </div>
 
           <div class="activity-grid">
             <article class="activity-card">
               <span>A1</span>
-              <h3>Gestão e coordenação</h3>
-              <p>Coordenação científica, articulação institucional, seleção de equipa, bolsas e acompanhamento da execução.</p>
+              <h3 data-i18n="activities.a1.title">Gestão e coordenação</h3>
+              <p data-i18n="activities.a1.copy">Coordenação científica, articulação institucional, seleção de equipa, bolsas e acompanhamento da execução.</p>
             </article>
             <article class="activity-card">
               <span>A2</span>
-              <h3>Vitalidade das árvores</h3>
-              <p>Imagens aéreas, índices de vegetação, crescimento radial e nutrição foliar para avaliar vigor vegetativo.</p>
+              <h3 data-i18n="activities.a2.title">Vitalidade das árvores</h3>
+              <p data-i18n="activities.a2.copy">Imagens aéreas, índices de vegetação, crescimento radial e nutrição foliar para avaliar vigor vegetativo.</p>
             </article>
             <article class="activity-card">
               <span>A3</span>
-              <h3>Ambiente local</h3>
-              <p>Caracterização climática, topográfica, edáfica e biótica, incluindo a presença de <em>P. cinnamomi</em>.</p>
+              <h3 data-i18n="activities.a3.title">Ambiente local</h3>
+              <p data-i18n="activities.a3.copy">Caracterização climática, topográfica, edáfica e biótica, incluindo a presença de <em>P. cinnamomi</em>.</p>
             </article>
             <article class="activity-card">
               <span>A4</span>
-              <h3>Homeostasia e genética</h3>
-              <p>FT-IR, proteómica quantitativa e WGS para identificar biomarcadores e variabilidade genética adaptativa.</p>
+              <h3 data-i18n="activities.a4.title">Homeostasia e genética</h3>
+              <p data-i18n="activities.a4.copy">FT-IR, proteómica quantitativa e WGS para identificar biomarcadores e variabilidade genética adaptativa.</p>
             </article>
             <article class="activity-card">
               <span>A5</span>
-              <h3>Análise de dados</h3>
-              <p>PCA, t-SNE, PLS, SVM e aprendizagem automática para encontrar padrões de resiliência e risco de declínio.</p>
+              <h3 data-i18n="activities.a5.title">Análise de dados</h3>
+              <p data-i18n="activities.a5.copy">PCA, t-SNE, PLS, SVM e aprendizagem automática para encontrar padrões de resiliência e risco de declínio.</p>
             </article>
             <article class="activity-card">
               <span>A6</span>
-              <h3>Divulgação</h3>
-              <p>Website, documentos técnicos, mapas, vídeos, workshops, conferências, publicações científicas e patente.</p>
+              <h3 data-i18n="activities.a6.title">Divulgação</h3>
+              <p data-i18n="activities.a6.copy">Website, documentos técnicos, mapas, vídeos, workshops, conferências, publicações científicas e patente.</p>
             </article>
           </div>
         </div>
@@ -236,26 +243,26 @@
       <section class="section section--outputs">
         <div class="section__inner output-layout">
           <div>
-            <p class="section-kicker">Resultados esperados</p>
-            <h2>Ciência aplicável à gestão do sobreiro.</h2>
+            <p class="section-kicker" data-i18n="outputs.kicker">Resultados esperados</p>
+            <h2 data-i18n="outputs.title">Ciência aplicável à gestão do sobreiro.</h2>
           </div>
 
           <div class="output-list" role="list">
             <div class="output-item" role="listitem">
-              <h3>Indicadores de vitalidade</h3>
-              <p>Mapas, séries temporais e índices fisiológicos para descrever o estado das árvores em campo.</p>
+              <h3 data-i18n="outputs.vitality.title">Indicadores de vitalidade</h3>
+              <p data-i18n="outputs.vitality.copy">Mapas, séries temporais e índices fisiológicos para descrever o estado das árvores em campo.</p>
             </div>
             <div class="output-item" role="listitem">
-              <h3>Perfis bioquímicos e genéticos</h3>
-              <p>Conjuntos de dados de FT-IR, proteómica e genómica para caracterizar mecanismos de adaptação.</p>
+              <h3 data-i18n="outputs.omics.title">Perfis bioquímicos e genéticos</h3>
+              <p data-i18n="outputs.omics.copy">Conjuntos de dados de FT-IR, proteómica e genómica para caracterizar mecanismos de adaptação.</p>
             </div>
             <div class="output-item" role="listitem">
-              <h3>Modelos de previsão</h3>
-              <p>Ferramentas de apoio à decisão para identificar fatores de risco e árvores candidatas a árvores-mãe.</p>
+              <h3 data-i18n="outputs.models.title">Modelos de previsão</h3>
+              <p data-i18n="outputs.models.copy">Ferramentas de apoio à decisão para identificar fatores de risco e árvores candidatas a árvores-mãe.</p>
             </div>
             <div class="output-item" role="listitem">
-              <h3>Transferência de conhecimento</h3>
-              <p>Protocolos, publicações Q1, workshops, demonstrações de campo e materiais para decisores e produtores.</p>
+              <h3 data-i18n="outputs.transfer.title">Transferência de conhecimento</h3>
+              <p data-i18n="outputs.transfer.copy">Protocolos, publicações Q1, workshops, demonstrações de campo e materiais para decisores e produtores.</p>
             </div>
           </div>
         </div>
@@ -264,35 +271,35 @@
       <section class="section" id="marcos">
         <div class="section__inner">
           <div class="section-heading">
-            <p class="section-kicker">Cronograma</p>
-            <h2>Marcos principais.</h2>
+            <p class="section-kicker" data-i18n="timeline.kicker">Cronograma</p>
+            <h2 data-i18n="timeline.title">Marcos principais.</h2>
           </div>
 
           <ol class="timeline">
             <li>
-              <time datetime="2026-10">Outubro 2026</time>
-              <h3>Arranque e coordenação</h3>
-              <p>Início do projeto, equipa, gestão colaborativa e apresentação às entidades locais.</p>
+              <time datetime="2026-10" data-i18n="timeline.m1.date">Outubro 2026</time>
+              <h3 data-i18n="timeline.m1.title">Arranque e coordenação</h3>
+              <p data-i18n="timeline.m1.copy">Início do projeto, equipa, gestão colaborativa e apresentação às entidades locais.</p>
             </li>
             <li>
-              <time datetime="2026-12">Dezembro 2026</time>
-              <h3>Campos experimentais</h3>
-              <p>Instalação de equipamentos e seleção de sobreiros nas serras do Caldeirão e de Monchique.</p>
+              <time datetime="2026-12" data-i18n="timeline.m2.date">Dezembro 2026</time>
+              <h3 data-i18n="timeline.m2.title">Campos experimentais</h3>
+              <p data-i18n="timeline.m2.copy">Instalação de equipamentos e seleção de sobreiros nas serras do Caldeirão e de Monchique.</p>
             </li>
             <li>
               <time datetime="2027">2027</time>
-              <h3>Primeiro ciclo de dados</h3>
-              <p>Monitorização ambiental, imagens drone, caracterização do solo e recolhas laboratoriais.</p>
+              <h3 data-i18n="timeline.m3.title">Primeiro ciclo de dados</h3>
+              <p data-i18n="timeline.m3.copy">Monitorização ambiental, imagens drone, caracterização do solo e recolhas laboratoriais.</p>
             </li>
             <li>
               <time datetime="2028">2028</time>
-              <h3>Integração e modelação</h3>
-              <p>Análise multivariada, aprendizagem automática e relação entre microambiente, fisiologia e perfis ómicos.</p>
+              <h3 data-i18n="timeline.m4.title">Integração e modelação</h3>
+              <p data-i18n="timeline.m4.copy">Análise multivariada, aprendizagem automática e relação entre microambiente, fisiologia e perfis ómicos.</p>
             </li>
             <li>
-              <time datetime="2029-09">Setembro 2029</time>
-              <h3>Resultados e disseminação</h3>
-              <p>Publicações, congresso nacional no Algarve, transferência de conhecimento e encerramento científico.</p>
+              <time datetime="2029-09" data-i18n="timeline.m5.date">Setembro 2029</time>
+              <h3 data-i18n="timeline.m5.title">Resultados e disseminação</h3>
+              <p data-i18n="timeline.m5.copy">Publicações, congresso nacional no Algarve, transferência de conhecimento e encerramento científico.</p>
             </li>
           </ol>
         </div>
@@ -301,32 +308,32 @@
       <section class="section section--contact" id="contactos">
         <div class="section__inner contact-panel">
           <div>
-            <p class="section-kicker">Entidade beneficiária</p>
+            <p class="section-kicker" data-i18n="contact.kicker">Entidade beneficiária</p>
             <div class="beneficiary-brand">
-              <img src="assets/ualg-logo.png" width="4060" height="1420" alt="Universidade do Algarve">
+              <img src="assets/ualg-logo.png" width="4060" height="1420" alt="Universidade do Algarve" data-i18n-attr="alt:contact.ualgAlt">
             </div>
-            <h2 class="sr-only">Universidade do Algarve</h2>
-            <p>
+            <h2 class="sr-only" data-i18n="contact.title">Universidade do Algarve</h2>
+            <p data-i18n="contact.copy">
               Projeto coordenado pela Investigadora Principal Ana Cristina Coelho, com equipa multidisciplinar nas áreas de bioquímica, biologia vegetal, ciências do ambiente, sensores, telecomunicações, inteligência artificial e design.
             </p>
           </div>
 
           <dl class="contact-facts">
             <div>
-              <dt>Acrónimo</dt>
+              <dt data-i18n="contact.acronym.label">Acrónimo</dt>
               <dd>OAKHIMEDES</dd>
             </div>
             <div>
-              <dt>Operação</dt>
-              <dd>Investigação científica e desenvolvimento tecnológico</dd>
+              <dt data-i18n="contact.operation.label">Operação</dt>
+              <dd data-i18n="contact.operation.value">Investigação científica e desenvolvimento tecnológico</dd>
             </div>
             <div>
-              <dt>Território</dt>
-              <dd>Serra do Caldeirão e Serra de Monchique</dd>
+              <dt data-i18n="contact.territory.label">Território</dt>
+              <dd data-i18n="contact.territory.value">Serra do Caldeirão e Serra de Monchique</dd>
             </div>
             <div>
-              <dt>Palavras-chave</dt>
-              <dd>Sobreiro, alterações climáticas, adaptação, sensores, sustentabilidade</dd>
+              <dt data-i18n="contact.keywords.label">Palavras-chave</dt>
+              <dd data-i18n="contact.keywords.value">Sobreiro, alterações climáticas, adaptação, sensores, sustentabilidade</dd>
             </div>
           </dl>
         </div>
@@ -335,7 +342,7 @@
 
     <footer class="site-footer">
       <img src="assets/logo-oakhimedes.svg" width="190" height="46" alt="OAKHIMEDES">
-      <p>Conteúdos preparados a partir dos documentos da candidatura OAKHIMEDES - versão V3.</p>
+      <p data-i18n="footer.copy">Conteúdos preparados a partir dos documentos da candidatura OAKHIMEDES - versão V3.</p>
     </footer>
 
     <script src="script.js"></script>
