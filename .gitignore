@@ -7,5 +7,6 @@ Desktop.ini
 *.tmp
 *.log
 *.zip
+~$*
 _preview-*.png
 _pptx_media_preview/
