@@ -368,6 +368,42 @@ a {
   margin-bottom: 0;
 }
 
+.section--focus {
+  background: #ffffff;
+  padding-top: 84px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.focus-card {
+  min-height: 226px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 24px;
+}
+
+.focus-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 34px;
+  margin-bottom: 22px;
+  border-radius: var(--radius);
+  background: rgba(154, 73, 55, 0.1);
+  color: var(--clay-600);
+  font-weight: 900;
+}
+
+.focus-card p {
+  margin-bottom: 0;
+}
+
 .section--map {
   background: linear-gradient(180deg, var(--sky-100), #ffffff);
 }
@@ -486,6 +522,13 @@ a {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.team-note {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-weight: 650;
+}
+
 .activity-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -587,6 +630,37 @@ a {
   margin-bottom: 0;
 }
 
+.section--partners {
+  background: linear-gradient(180deg, #ffffff, var(--soft));
+}
+
+.partners-copy {
+  max-width: 780px;
+  margin: -12px 0 32px;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.partner-logo {
+  min-height: 132px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  padding: 18px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 86px;
+  object-fit: contain;
+}
+
 .section--contact {
   background: var(--soft);
 }
@@ -667,6 +741,8 @@ a {
   .metrics,
   .activity-grid,
   .team-grid,
+  .focus-grid,
+  .partner-grid,
   .timeline,
   .output-list,
   .contact-facts {
@@ -819,6 +895,8 @@ a {
 
   .activity-grid,
   .team-grid,
+  .focus-grid,
+  .partner-grid,
   .timeline,
   .output-list,
   .contact-facts {
@@ -827,6 +905,8 @@ a {
 
   .activity-card,
   .team-member,
+  .focus-card,
+  .partner-logo,
   .timeline li,
   .output-item,
   .contact-facts div {
