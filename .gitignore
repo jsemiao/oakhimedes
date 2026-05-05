@@ -10,3 +10,10 @@ Desktop.ini
 ~$*
 _preview-*.png
 _pptx_media_preview/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
